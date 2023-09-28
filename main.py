@@ -105,7 +105,7 @@ for phase in phases:
     print(f'Length of {phase} loader = {len(data_loader[phase])}')
 
 # model, criterion, optimizer
-model = torchvision.models.vgg16(pretrained=True)
+model = torchvision.models.resnet50(pretrained=True)
 model = model.to(device)
 
 model = ConvNet(model, num_classes)
